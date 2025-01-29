@@ -12,7 +12,6 @@ crash.log
 # Directories
 .terraform/
 .terraform.lock.hcl
-.terraform/**/*
 .terragrunt-cache/
 
 # System Files
