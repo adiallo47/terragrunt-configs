@@ -34,7 +34,7 @@ jobs:
             
             #Run Terragrunt
             - name: Run Terragrunt
-              run: 
+              run: |
                 cd terragrunt-configs/staging/s3
                 terragrunt init
                 terragrunt plan
