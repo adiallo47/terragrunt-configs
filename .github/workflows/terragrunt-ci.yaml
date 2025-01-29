@@ -13,7 +13,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
               with: 
-                  repository: adiallo47/terraform-modules
+                  repository: adiallo47/terragrunt-configs
                   ref: "master"
             
             - name: Install Terraform
