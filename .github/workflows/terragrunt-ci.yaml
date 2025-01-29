@@ -13,7 +13,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
               with: 
-                  repository: "git::https://github.com/adiallo47/terraform-modules.git"
+                  repository: adiallo47/terraform-modules
                   ref: "master"
             
             - name: Install Terraform
