@@ -51,5 +51,5 @@ jobs:
             - name: Apply Terragrunt Changes
               if: github.ref == 'refs/heads/main'
               run: |
-                cd terragrunt-configs/staging/s3
+                cd staging/s3
                 terragrunt apply -auto-approve
