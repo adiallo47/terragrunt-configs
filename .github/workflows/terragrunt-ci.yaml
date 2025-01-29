@@ -13,8 +13,10 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            
             - name: Install Terraform
               uses: hashicorp/setup-terraform@v2
+
             - name: Terraform version
               run: terraform --version
 
@@ -32,6 +34,10 @@ jobs:
                   aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                   aws-region: us-east-1
             
+            #Terragrunt cache clear
+            - name: Clear Terragrunt Cache
+              run: rm -rf .terragrunt-cache
+
             #Run Terragrunt
             - name: Run Terragrunt
               run: |
